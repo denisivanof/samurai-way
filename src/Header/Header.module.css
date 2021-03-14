@@ -8,3 +8,10 @@ header img {
   width: 40px;
   padding: 5px;
 }
+
+.loginBlok{
+  float: right;
+}
+.loginBlok a {
+  color: aliceblue;
+}

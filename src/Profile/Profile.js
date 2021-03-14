@@ -1,16 +1,14 @@
-import React from 'react';
-import Myposts from './Myposts/Myposts';
-import Profileinfo from './Myposts/ProfileInfo/Profileinfo';
-import s from './Profile.module.css';
+import React from "react";
+import MypostsContainer from "./Myposts/MypostsContainer";
+import Profileinfo from "./Myposts/ProfileInfo/Profileinfo";
 
-const Content = (props) => {
+
+const Profile = (props) => {
   return (
-    <div >
-    <Profileinfo/>
-    <Myposts posts={props.state.posts} 
-            addPost={props.addPost} 
-            newPostText={props.state.newPostText}
-            updateNewPostText={props.updateNewPostText}/>
-    </div>)
-}
-export default Content;
+    <div>
+      <Profileinfo profile={props.profile} status={props.status} UpdateStatus={props.UpdateStatus}/>
+      <MypostsContainer/>
+    </div>
+  );
+};
+export default Profile;

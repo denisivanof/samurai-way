@@ -23,5 +23,9 @@
         ]
     },
     "beautify.ignore": "",
-    "beautify.config": ""
+    "beautify.config": "",
+    "auto-rename-tag.activationOnLanguage": [
+    
+        "*"
+    ]
 }
