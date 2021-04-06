@@ -1,0 +1,14 @@
+.descriptionBlock{
+    padding: 15px;
+}
+.photo {
+    width: 150px;
+    border-radius: 15px;
+}
+.contact {
+    padding-left: 25px;
+}
+.profileInfo{
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

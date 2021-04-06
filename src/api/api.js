@@ -34,11 +34,29 @@ export const getStatusAPI = (userId) =>{
 
 export const updateStatusAPI = (status) =>{
     return instans.put(`profile/status`, {status})
-}
+} 
 
-export const loginApi = (email, password, rememberMe) => {
-    return instans.post(`auth/login`,{email, password, rememberMe })
+export const savePhotoAPI = (file) => {
+        let formData = new FormData();
+        formData.append("image", file);
+    
+        return instans.put(`profile/photo`, formData, {
+            headers: {
+              'Content-Type': 'multipart/form-data'
+            }
+        });
+    }
+export const saveProfileDataAPI = (profile) =>{
+        return instans.put(`profile`, profile)
+    } 
+
+export const loginApi = (email, password, rememberMe, captcha) => {
+    return instans.post(`auth/login`,{email, password, rememberMe, captcha })
 };
+export const getCaptchaApi = () => {
+    return instans.get(`security/get-captcha-url`)
+};
+
 export const logoutApi = () => {
     return instans.delete(`auth/login`,)
 };

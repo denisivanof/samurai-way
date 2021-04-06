@@ -1,0 +1,17 @@
+.paginator {
+    margin: 10px;
+}
+.pageNumber {
+    padding: 2px;
+    border: 1px solid rgb(131, 127, 127);
+}
+
+.pageNumber.selectPage{
+    font-weight: bold;
+    border-color: black;
+}
+.button{
+    font-size: 18.5px;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 38, 0);
+}

@@ -1,0 +1,35 @@
+
+.header {
+grid-area: h;
+background-color: rgba(47, 87, 245, 0.522);
+margin: 1px 0;
+}
+header img {
+  width: 50px;
+  padding: 5px;
+}
+
+.loginBlok{
+  float: right;
+  padding: 10px;
+  margin: auto;
+}
+.loginBlok a {
+  margin: auto;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 23px;
+  font-family:monospace;
+}
+.logOut{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.button{
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.837);
+  border: none;
+  font-size: 19px;
+}

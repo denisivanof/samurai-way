@@ -1,0 +1,9 @@
+.item img {
+  width: 60px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.message{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+}

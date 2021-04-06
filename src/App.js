@@ -1,21 +1,21 @@
 import React, { Suspense } from 'react';
-import "./App.css";
-import ProfileContainer from "./Profile/ProfileContainer";
-import UsersContainer from './Users/UsersContainer';
-import Navbar from "./Navbar/Navbar";
-import News from "./News/News";
-import Music from "./Music/Music";
-import Settings from "./Settings/Settings";
-import { BrowserRouter, Route, withRouter } from "react-router-dom";
-import HeaderContainer from "./Header/HeaderContainer";
-import Login from "./login/login";
-import { compose } from "redux";
 import { connect } from "react-redux";
-import {initializeApp} from './redux/appReducer'
-import Preloader from "./Preloader/Preloader";
+import { Route, withRouter } from "react-router-dom";
+import { compose } from "redux";
+import "./App.css";
+import HeaderContainer from "./Component/Header/HeaderContainer";
+import Login from "./Component/login/login";
+import Music from "./Component/Music/Music";
+import Navbar from "./Component/Navbar/Navbar";
+import News from "./Component/News/News";
+import Preloader from "./Component/Preloader/Preloader";
+import ProfileContainer from "./Component/Profile/ProfileContainer";
+import { initializeApp } from './redux/appReducer';
+import Settings from "./Component/Settings/Settings";
+import UsersContainer from './Component/Users/UsersContainer';
 
 // import DialogsContainer from "./Dialogs/DialogsContainer";
-const DialogsContainer = React.lazy(() => import('./Dialogs/DialogsContainer'));
+const DialogsContainer = React.lazy(() => import('./Component/Dialogs/DialogsContainer'));
 
 
 class App extends React.Component {

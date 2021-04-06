@@ -1,0 +1,23 @@
+.oppa {
+    color:red;
+}
+.login {
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(146, 240, 108);
+
+}
+.h1{
+    text-align: center;
+}
+.loginForm{
+    display: flex;
+    justify-content: center;
+}
+.re{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
